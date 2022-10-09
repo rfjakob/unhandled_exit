@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "unhandled_exit"
+version = "0.0.1"
+authors = [
+  { name="Jakob Unterwurzacher", email="jakobunt@gmail.com" },
+]
+description = "Exit the whole process if any thread throws an unhandled exception"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rfjakob/unhandled_exit"
+"Bug Tracker" = "https://github.com/rfjakob/unhandled_exit/issues"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest -v tests/tests.py"
