@@ -63,18 +63,16 @@ git clone https://github.com/rfjakob/unhandled_exit
 cd unhandled_exit
 ```
 
-Run the Test Suite:
+Run the Test Suite (needs `pip install hatch`):
 
 ```
-hatch run test
+make test
 ```
 
-Publish to pypi:
+Publish to pypi (needs `pip install hatch`):
 
 ```
-hatch clean
-hatch build
-hatch publish
+make publish
 ```
 
 ## References
