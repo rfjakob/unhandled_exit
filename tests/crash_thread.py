@@ -7,8 +7,10 @@ import sys
 import unhandled_exit
 unhandled_exit.activate()
 
+
 def t1_func():
     x = 1/0
+
 
 threading.Thread(target=t1_func).start()
 
