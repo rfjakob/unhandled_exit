@@ -21,10 +21,15 @@ def _sys_excepthook(type, value, traceback):
 
 def activate():
     """
-    Activate unhandled_exit and make the whole process exit if an unhandled
-    exception occours in a thread or in main.
+    `activate()` enables the functionality of the `unhandled_exit`
+    package. After calling `activate()`, the whole process will
+    exit if an unhandled exception occurs in a thread or in main.
 
-    This modifies `threading.excepthook` and `sys.excepthook`.
+    This works by chaining `os._exit(1)` after `threading.excepthook` and
+    `sys.excepthook`.
+
+    It is safe to call `activate()` multiple times.
+    The second and later calls will be no-ops.
     """
 
     global _active
@@ -44,11 +49,15 @@ def activate():
 
 def deactivate():
     """
-    Deactivate unhandled_exit and restore the original behavoir when an
-    unhandled exception occours.
+    `deactivate()` resets `threading.excepthook` and `sys.excepthook`
+    to the values they had before `activate()`.
 
-    This resets `threading.excepthook` and `sys.excepthook` to their original
-    values.
+    It is safe to call `deactivate()` multiple times.
+    The second and later calls will be no-ops.
+
+    If `threading.excepthook` and/or `sys.excepthook` have been
+    changed between `activate()` and `deactivate()`, a warning
+    is printed and this excepthook is left as-is.
     """
 
     global _active
