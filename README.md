@@ -13,18 +13,30 @@ import unhandled_exit
 unhandled_exit.activate()
 ```
 
+## Examples
+
+[crash_main.py](https://github.com/rfjakob/unhandled_exit/blob/master/tests/crash_main.py)
+[crash_thread.py](https://github.com/rfjakob/unhandled_exit/blob/master/tests/crash_thread.py)
+
 # Hacking
 
-Many commands here require `hatch` (`pip install hatch`).
+Get the code:
 
-## Run the Test Suite
+```
+git clone https://github.com/rfjakob/unhandled_exit
+cd unhandled_exit
+```
+
+Run the Test Suite:
 
 ```
 hatch run test
 ```
 
-## Publish to pypi
+Publish to pypi:
 
 ```
+hatch clean
+hatch build
 hatch publish
 ```
