@@ -1,6 +1,6 @@
 # unhandled_exit
 
-[![CI](https://github.com/rfjakob/unhandled_exit/actions/workflows/python-package.yml/badge.svg)](https://github.com/rfjakob/unhandled_exit/actions/workflows/python-package.yml)
+[![CI](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml/badge.svg)](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml)
 [![PyPI version](https://badge.fury.io/py/unhandled_exit.svg)](https://badge.fury.io/py/unhandled_exit)
 
 `unhandled_exit` makes the whole process exit if an unhandled
