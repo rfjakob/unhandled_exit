@@ -1,7 +1,7 @@
 # unhandled_exit
 
 [![CI](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml/badge.svg)](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml)
-[![PyPI version](https://badge.fury.io/py/unhandled_exit.svg)](https://badge.fury.io/py/unhandled_exit)
+[![PyPI version](https://badge.fury.io/py/unhandled_exit.svg)](https://pypi.org/project/unhandled_exit/)
 
 `unhandled_exit` makes the whole process exit if an unhandled
 exception occours in a thread or in main.
