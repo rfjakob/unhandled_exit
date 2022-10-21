@@ -1,4 +1,4 @@
-# unhandled_exit
+# unhandled_exit [![Python package](https://github.com/rfjakob/unhandled_exit/actions/workflows/python-package.yml/badge.svg)](https://github.com/rfjakob/unhandled_exit/actions/workflows/python-package.yml)
 
 `unhandled_exit` makes the whole process exit if an unhandled
 exception occours in a thread or in main.
