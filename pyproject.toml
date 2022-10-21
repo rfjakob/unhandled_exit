@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/rfjakob/unhandled_exit"
+"Source Code" = "https://github.com/rfjakob/unhandled_exit"
 "Bug Tracker" = "https://github.com/rfjakob/unhandled_exit/issues"
 
 [tool.hatch.envs.default]
