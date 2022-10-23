@@ -72,6 +72,25 @@ Run the Test Suite (needs `pip install hatch`):
 make test
 ```
 
+Output should look like this:
+```
+python -m compileall -q .
+hatch run test
+========================== test session starts ===========================
+platform linux -- Python 3.10.7, pytest-7.1.3, pluggy-1.0.0 -- /home/jakob/.local/share/hatch/env/virtual/unhandled-exit/PB23ljro/unhandled-exit/bin/python
+cachedir: .pytest_cache
+rootdir: /home/jakob.donotbackup/code/unhandled_exit
+plugins: cov-4.0.0
+collected 4 items                                                        
+
+tests/tests.py::test_crash_main PASSED                             [ 25%]
+tests/tests.py::test_crash_thread PASSED                           [ 50%]
+tests/tests.py::test_crash_single PASSED                           [ 75%]
+tests/tests.py::test_nocrash PASSED                                [100%]
+
+=========================== 4 passed in 0.18s ============================
+```
+
 Publish to pypi (needs `pip install hatch`):
 
 ```

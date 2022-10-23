@@ -1,12 +1,16 @@
 .PHONY: all
-all: build test
+all: test build
+
+.PHONY: syntax
+syntax:
+	python -m compileall -q .
 
 .PHONY: build
-build:
+build: syntax
 	hatch build
 
 .PHONY: test
-test:
+test: syntax
 	hatch run test
 
 .PHONY: clean
@@ -20,5 +24,5 @@ publish:
 	hatch publish
 
 .PHONY: format
-format:
+format: syntax
 	python -m autopep8 -r -i .
