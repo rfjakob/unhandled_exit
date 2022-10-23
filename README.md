@@ -7,7 +7,9 @@
 exception occours in a thread or in main.
 
 Uses [`threading.excepthook`](https://docs.python.org/3/library/threading.html#threading.excepthook)
-which is only available in Python 3.8 and later.
+which is only available in Python 3.8 and later. The
+[automated tests](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml)
+test Python 3.8, 3.9 and 3.10.
 
 ## Quickstart
 
