@@ -9,13 +9,13 @@ _active = False
 
 def _threading_excepthook(args):
     _orig_threading_excepthook(args)
-    print(f"{__name__}: exiting process due to unhandled exception in thread", file=sys.stderr)
+    print(f"{__name__}: exiting process due to unhandled exception in thread", file=sys.stderr, flush=True)
     os._exit(1)
 
 
 def _sys_excepthook(type, value, traceback):
     _orig_sys_excepthook(type, value, traceback)
-    print(f"{__name__}: exiting process due to unhandled exception in main", file=sys.stderr)
+    print(f"{__name__}: exiting process due to unhandled exception in main", file=sys.stderr, flush=True)
     os._exit(1)
 
 
