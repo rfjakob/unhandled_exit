@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+#
+# Crash in main thread with a background thread running
+#
+# You can run this script without installing unhandled_exit using
+# "hatch run":
+#
+#   hatch run tests/crash_main.py
 
 import threading
 import time
