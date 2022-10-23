@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "unhandled_exit"
-version = "0.0.3"
+version = "1.0.0-rc1"
 authors = [
   { name="Jakob Unterwurzacher", email="jakobunt@gmail.com" },
 ]
