@@ -21,7 +21,7 @@ def _sys_excepthook(type, value, traceback):
 
 def activate():
     """
-    `activate()` enables the functionality of the `unhandled_exit`
+    `activate()` enables the functionality of the *unhandled_exit*
     package. After calling `activate()`, the whole process will
     exit if an unhandled exception occurs in a thread or in main.
 

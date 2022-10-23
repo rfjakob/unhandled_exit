@@ -3,7 +3,7 @@
 [![CI](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml/badge.svg)](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml)
 [![PyPI version](https://badge.fury.io/py/unhandled_exit.svg)](https://pypi.org/project/unhandled_exit/)
 
-`unhandled_exit` makes the whole process exit if an unhandled
+*unhandled_exit* makes the whole process exit if an unhandled
 exception occours in a thread or in main.
 
 Uses [`threading.excepthook`](https://docs.python.org/3/library/threading.html#threading.excepthook)
@@ -11,7 +11,7 @@ which is only available in Python 3.8 and later. The
 [automated tests](https://github.com/rfjakob/unhandled_exit/actions/workflows/ci.yml)
 test Python 3.8, 3.9 and 3.10.
 
-## Quickstart
+## Usage
 
 ```
 import unhandled_exit
@@ -37,7 +37,7 @@ restart it and/or the developer can investigate what went wrong.
 
 ### activate()
 
-`activate()` enables the functionality of the `unhandled_exit`
+`activate()` enables the functionality of the *unhandled_exit*
 package. After calling `activate()`, the whole process will
 exit if an unhandled exception occurs in a thread or in main.
 
